@@ -1,22 +1,16 @@
-# README-Architect
+# README-Architect sample
   
   
   
   ## Description
-Create professional README.md files for your projects with just a few clicks. This Node.js app streamlines README creation, ensuring your projects have all the essential information.
-
+  Create  profesional README.md files for your projects with just a few clicks.
+  
   ## Table of Contents
-  - [Video](#Video)  
   - [Deployment](#deployment)
   - [Repository](#repository)
   - [License](#license)
   - [Questions](#questions)
   
-  ## Video
-Through this link you will be able to access to the demo video of the page in operation.
-
-  https://drive.google.com/file/d/1FJr62ke5PhmdwA564ITJzmcP_cD29mHk/view?usp=sharing
-
   ## Deployment
   The application is deployed at the following URL:
   [ https://robert-ulloa.github.io/README-Architect/]( https://robert-ulloa.github.io/README-Architect/)
