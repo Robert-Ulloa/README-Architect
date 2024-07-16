@@ -23,11 +23,6 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'tests',
-        message: 'What are the test instructions?',
-    },
-    {
-        type: 'input',
         name: 'deployment',
         message: 'What is the deployment link?',
     },

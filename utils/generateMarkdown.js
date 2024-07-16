@@ -1,4 +1,4 @@
-// Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if (license === 'none') {
@@ -7,7 +7,7 @@ function renderLicenseBadge(license) {
     return `![License](https://img.shields.io/badge/License-${license.replace(/ /g, '%20')}-blue.svg)`;
   }
   
-  // Create a function that returns the license link
+  // Function that returns the license link
   // If there is no license, return an empty string
   function renderLicenseLink(license) {
     switch (license) {
@@ -24,7 +24,7 @@ function renderLicenseBadge(license) {
     }
   }
   
-  // Create a function that returns the license section of README
+  // Function that returns the license section of README
   // If there is no license, return an empty string
   function renderLicenseSection(license) {
     if (license === 'none') {
@@ -35,7 +35,7 @@ function renderLicenseBadge(license) {
   This project is licensed under the [${license}](${renderLicenseLink(license)}) license.`;
   }
   
-  // Create a function to generate markdown for README
+  // Function to generate markdown for README
   function generateMarkdown(data) {
     return `# ${data.title}
   
@@ -45,34 +45,31 @@ function renderLicenseBadge(license) {
   ${data.description}
   
   ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
+  - [Deployment](#deployment)
+  - [Repository](#repository)
   - [License](#license)
-  - [Tests](#tests)
   - [Questions](#questions)
   
-  ## Installation
-  To install the necessary dependencies, run the following command:
-  \`\`\`
-  npm install
-  \`\`\`
+  ## Deployment
+  The application is deployed at the following URL:
+  [${data.deployment}](${data.deployment})
   
-  ## Usage
-  ${data.usage}
+  ## Repository
+  The repository can be found at the following URL:
+  [${data.repo}](${data.repo})
   
   ${renderLicenseSection(data.license)}
   
-  ## Tests
-  To run tests, run the following command:
-  \`\`\`
-  ${data.tests}
-  \`\`\`
-  
   ## Questions
-  If you have any questions about the repository, open an issue or contact me directly at [${data.email}](mailto:${data.email}). You can find more of my work at [${data.github}](https://github.com/${data.github}).
+  For any questions, please contact me with the information below:
+  
+  GitHub: [${data.github}](https://github.com/${data.github})
+  
+  Email: [${data.email}](mailto:${data.email})
   
   LinkedIn: [${data.linkedIn}](${data.linkedIn})
   `;
   }
   
   module.exports = generateMarkdown;
+  
